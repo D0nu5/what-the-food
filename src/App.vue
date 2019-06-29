@@ -1,11 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+  <div>
+    <Row>
+      <search-box />
+    </Row>
   </div>
 </template>
 
 <script>
+
+import { Row } from 'element-ui'
+import SearchBox from './components/SearchBox'
+
 export default {
-  name: 'app'
+  name: 'app',
+  components: {
+    SearchBox,
+    Row
+  },
+  methods:{
+    search(){
+      return{
+
+      }
+    }
+  }
 }
 </script>
